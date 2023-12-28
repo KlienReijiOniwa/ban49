@@ -79,6 +79,7 @@ window.onload = function() {
    <button onclick="Spins()" class="buy">⭐Spin Random PowerUps⭐</button>
    <figcaption>info:</figcaption>
 Cost:[<span id="SpinORAL">25000</span>$] You Spin:<span id="SpinNum">0</span>
+    <figure></figure>
 <button class="buy"><a style="color:white;" href="Leaderboard.html">🔥LeaderBoard🔥</a></button>
     
     
@@ -541,34 +542,34 @@ reloadall();
 
 function reloadall() {
 showBerries = window.localStorage.getItem('berries1');
-  document.getElementById('berries').innerHTML = berries;
+  document.getElementById('berries').innerHTML = berries1;
   
 showBerriesPerSecond = window.localStorage.getItem('berriesPerSecond1');
-  document.getElementById('berriesPerSecond').innerHTML = berriesPerSecond;
+  document.getElementById('berriesPerSecond').innerHTML = berriesPerSecond1;
   
 chopperCost = window.localStorage.getItem('chopperCost1');
-  document.getElementById('chopperCost').innerHTML = chopperCost;
+  document.getElementById('chopperCost').innerHTML = chopperCost1;
   
 namiCost = window.localStorage.getItem('namiCost1');
-  document.getElementById('namiCost').innerHTML = namiCost;
+  document.getElementById('namiCost').innerHTML = namiCost1;
   
 brookCost = window.localStorage.getItem('brookCost1');
-  document.getElementById('brookCost').innerHTML = brookCost;
+  document.getElementById('brookCost').innerHTML = brookCost1;
   
 frankyCost = window.localStorage.getItem('frankyCost1');
-  document.getElementById('frankyCost').innerHTML = frankyCost;
+  document.getElementById('frankyCost').innerHTML = frankyCost1;
   
 usoppCost = window.localStorage.getItem('usoppCost1');
-  document.getElementById('usoppCost').innerHTML = usoppCost;
+  document.getElementById('usoppCost').innerHTML = usoppCost1;
   
 npcCost = window.localStorage.getItem('npcCost1');
-  document.getElementById('npcCost').innerHTML = npcCost;
+  document.getElementById('npcCost').innerHTML = npcCost1;
   
 frankyCost = window.localStorage.getItem('SpinORAL1');
-  document.getElementById('SpinORAL').innerHTML = SpinORAL;
+  document.getElementById('SpinORAL').innerHTML = SpinORAL1;
   
 NerdCost = window.localStorage.getItem('NerdCost1');
-  document.getElementById('NerdCost').innerHTML = NerdCost;
+  document.getElementById('NerdCost').innerHTML = NerdCost1;
   
     
 }
@@ -589,7 +590,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-const treatmojis = ["💰", "💵", "💸", "🪙"];
+const treatmojis = ["💰", "💵", "💸", "🪙", "OniwaPenut Pogi"];
 const treats = [];
 const radius = 15;
 
