@@ -1,0 +1,773 @@
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+
+  <audio hidden="" id="click" src="Assets/Music/click.mp3" type="mp3"/>
+</audio>
+  <audio hidden="" id="audio" src="Assets/Music/back.mp3" type="mp3" loop=""/>
+</audio>
+<script>
+console.log("Player(Joined)[User:58384783]")
+
+window.onload = function() {
+    document.getElementById("audio").play();
+    console.log("object.Play(0937492).onload[Undifined]")
+    console.log("File:(music.mp3).play();[100]");
+    console.log("Music Playing...");
+    console.log("data load");
+    
+    load();
+}
+
+</script>
+<figure></figure>
+<body id="myBook" onoffline="pageoffline()" onbeforeunload="return closingCode()">
+  <fieldset class="Simpleborder">
+  <h3>Hacking Simulator</h3>
+  <p id="Gulp"></p>
+  <figcaption><kbd>1</kbd> Players Online</figcaption>
+  <kbd>version:1 | made by OniwaKurien</kbd>
+    </fieldset>
+    
+    
+    
+    <fieldset class="Simpleborder">
+      <h3>Global News:</h3>
+  <tr></tr><figure><marquee> <tr>[📢New:A Player Named XiaoXiao Hacks 4SX+ People Today🙀]       [📢New:Night Is A Owl]
+  
+ [ 📢New:A Player Named OniwaPenut Hacks 77.3QW+ People Today🙀]
+ 
+ [ 📢New:🧑‍💻A God Has Joined The Server, Please Be carefull!🧑‍💻]
+ 
+ [ 📢New:💎You Can Spin to get some Random Money Give💰]
+ 
+ [ 📢New:A Player Named GULPGULPGULPMNJS Hacks 500Q+ People Today🙀]
+ 
+ [ 📢New:Leaderboard Refresh in 4:00:00 <a href="Leaderboard.html">Go LeaderBoard</a>
+  </tr></marquee>
+
+  
+  
+  
+  
+  
+  
+  </figure>
+</fieldset>
+
+
+
+  <center>
+<fieldset class="Simpleborder">
+<h2 class="moneycolor"><p id="berryCounter">$:<span id="showBerries" class="number">0</span></p></h2>
+    </fieldset>
+      <figure></figure>
+    <fieldset class="Simpleborder">
+      <h4>Click Here To Start Hacking:</h4>
+      <div class="treat-wrapper">
+<button class="treat-button" onclick="increment()">Hack
+</div>
+
+</button>
+<h4>⚠️Warning⚠️:</h4>
+<p>Always Save Your progress, sometimes The Auto Save Will broken</p>
+<button onclick="save()" class="buy">Save Progress</button>
+<button class="buy" onclick="load()">Load Progress</button>
+<figcaption>[Your LocalData is Being Uploud to servers]</figcaption>
+
+
+
+</fieldset>
+<figure></figure>
+   <button class="buy" >This Game Made with ❤️<p id="gameOver"></p></button>
+   <figure></figure>
+    <button class="buy" onclick="alert("Event Not Started Yet:")">🎉New Year Eves Event🎉</button>
+    <figure></figure>
+   <button onclick="Spins()" class="buy">⭐Spin Random PowerUps⭐</button>
+   <figcaption>info:</figcaption>
+Cost:[<span id="SpinORAL">25000</span>$] You Spin:<span id="SpinNum">0</span>
+<button class="buy"><a style="color:white;" href="Leaderboard.html">🔥LeaderBoard🔥</a></button>
+    
+    
+<fieldset class="Simpleborder"><legend> <h2>Shop</h2></legend>
+<p>All Hacker friend Left you if you quit the game they gonna leftbyou beacuse you just kidnapped them and slavery</p>
+<fieldset class="itemborder">
+  <h4>🧑‍💻Hacker Friend 1 | Buys:<span id="chopperNum">0</span></h4>
+  <p>My Job is Hacking</p>
+  <p>Cost:<span id="chopperCost">50</span>$ | he Hacks Per Second</p>
+  <button class="buy" onclick="buyChopper()" id="hideo">Buy</button>
+</fieldset>
+<fieldset class="itemborder">
+  <h4>🧑‍💻Hacker Friend 2 | Buys:<span id="namiNum">0</span></h4>
+  <p>Hacks per 10 seconds is long but can give more money</p>
+  <p>Cost:<span id="namiCost">160</span>$ | Hacker</p>
+  <button class="buy" onclick="buyNami()" id="hideo">Buy</button>
+</fieldset>
+
+<fieldset class="itemborder">
+  <h4>🧑‍💻Hacker Bestfriend | Buys:<span id="brookNum">0</span></h4>
+  <p>Hacks per 100 seconds is long but can give more money</p>
+  <p>Cost:<span id="brookCost">320</span>$ | Hacker</p>
+  <button class="buy" onclick="buyBrook()" id="hideo">Buy</button>
+</fieldset>
+<h2>Basement:</h2>
+<fieldset class="itemborder">
+  <h4>👱Karen Hacker 1 | Buys:<span id="usoppNum">0</span></h4>
+  <p>ummm Can i Speak to your Manager</p>
+  <p>Cost:<span id="frankyCost">1500</span>$ | Karens</p>
+  <button class="buy" onclick="buyFranky()" id="hideo">Buy</button>
+</fieldset>
+<fieldset class="itemborder">
+  <h4>👱Karen Hacker 2 | Buys:<span id="frankyNum">0</span></h4>
+  <p>ummm Can i Speak to your Manager</p>
+  <p>Cost:<span id="usoppCost">2600</span>$ | Karens</p>
+  <button class="buy" onclick="buyUsopp()" id="hideo">Buy</button>
+</fieldset>
+<fieldset class="itemborder">
+  <h4>🤓Nerd Hacker | Buys:<span id="NerdNum">0</span></h4>
+  <p>☝️🤓Ummmm.. achually </p>
+  <p>Cost:<span id="NerdCost">10000000</span>$ | he Hacks Per Second</p>
+  <button class="buy" onclick="buyNerd()" id="hideo">Buy</button>
+</fieldset>
+
+</fieldset>
+
+</center>
+<style>
+  body {
+    margin: 0px;
+background-image: url('Assets/image/Goho.gif');
+
+  }
+  .moneycolor {
+    color: #394;
+    text-decoration-line: 10px;
+    text-decoration-color: black;
+    text-shadow: 100%;
+    margin: 0px;
+    size: 10px;
+    text-size-adjust: 10px;
+  }
+  .buy {
+    width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+    border-color: black;
+    color:white;
+    background-color: #299;
+  }
+  .Simpleborder {
+    border-color: black;
+    border-radius: 10px;
+   background-color: white;
+  }
+  .hack {
+    padding: 30;
+    border-radius: 10000px;
+    background-color: #299;
+    color: white;
+    border-color: black;
+    text-size-adjust: 20px;
+    
+  }
+  .itemborder {
+border-color: black;
+    border-radius: 10px;
+    background-color:#385;
+    color: white;
+  }
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline&display=swap');
+
+html, body {
+  
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+
+.treat-button {
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 4vmin;
+  appearance: none;
+  background: linear-gradient(to bottom, #F46001, #E14802);
+  border: none;
+  color: #FFF;
+  border-radius: 2em;
+  padding: .6em 1.5em;
+  overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0 0 1em rgba(white, .2);
+  transition: transform .1s cubic-bezier(.5, 0, .5, 1),
+    box-shadow .2s;
+  
+  &:hover {
+    box-shadow: 0 0 2em rgba(white, .3);
+  }
+
+  outline: none;
+
+  &:active {
+    transform: scale(0.8) translateY(10%);
+    transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+  }
+}
+
+.treat {
+  --scale-x: 0;
+  --scale-y: 0;
+  pointer-events: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: calc(50% - .5rem);
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vmin;
+  transform: 
+    translate(
+      calc( var(--x) * 1px ), 
+      calc( var(--y) * 1px )
+    ) 
+    translate(-50%, -50%);
+  pointer-events: none;
+  animation: 
+    treat-enter .1s ease-in backwards, 
+    treat-exit 300ms linear 
+    calc( (var(--lifetime, 3000) * 1ms) - 300ms) 
+    forwards;
+
+  @keyframes treat-enter {
+    from {
+      opacity: 0;
+    }
+  }
+  @keyframes treat-exit {
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .inner {
+    animation: inner-rotate .6s linear infinite;
+    transform: rotate( 
+      calc(-1turn * var(--direction) )
+    ); 
+    @keyframes inner-rotate {
+      to { 
+        transform: none;
+      } 
+    }
+  }
+}
+button {
+  width: 100px;
+  height: 100px;
+}
+</style>
+<script>
+  //Berry information
+var berries = 0;
+var berriesPerSecond = 0;
+var berriesPerClick = 1;
+
+//Cost of each crew member
+var chopperCost = 50;
+var namiCost = 160;
+var brookCost = 320;
+var frankyCost = 1500;
+var usoppCost = 2600;
+var npcCost = 10000;
+var SpinORAL = 25000;
+var NerdCost = 10000000;
+//Level of each crew member
+var chopper = 0;
+var nami = 0;
+var brook = 0;
+var franky = 0;
+var usopp = 0;
+var npc = 0;
+var Spin = 0;
+var Nerd = 0;
+//Every click
+function increment(){
+document.getElementById("click").play();
+    berries += berriesPerClick;
+    document.getElementById("showBerries").innerText = berries;
+
+    //Gol D. Roger's Bounty = 5,564,800,000 Berries
+  if(berries >= 100000000000000000000000000000000000000000000000000000000000009999999999999999998848383833883777373737383838388373737373477337373838377737373737373738282874739284748287574828274748383747483828374738383838383838377884484838474747474747474747474){
+        document.getElementById("gameOver").innerText = "🪽Battle🪽(Fight Global Players)";
+        }
+}
+//Every second
+setInterval(function(){
+    berries += berriesPerSecond;
+    document.getElementById("showBerries").innerText = berries;
+}, 1000)
+
+//Buy buttons
+function buyChopper(){
+    if(berries >= chopperCost){
+        berries -= chopperCost;
+        document.getElementById("showBerries").innerText = berries;
+        chopper++;
+        document.getElementById("chopperNum").innerText = chopper;
+        chopperCost *= 2;
+        document.getElementById("chopperCost").innerText = chopperCost;
+        berriesPerSecond += 1;
+        document.getElementById("showBerriesPerSecond").innerText = berriesPerSecond;
+    } else {
+        alert("You don't have enough Money!");
+    }
+}
+
+function buyNami(){
+    if(berries >= namiCost){
+        berries -= namiCost;
+        document.getElementById("showBerries").innerText = berries;
+        nami++;
+        document.getElementById("namiNum").innerText = nami;
+        namiCost *= 10;
+        document.getElementById("namiCost").innerText = namiCost;
+        berriesPerClick += 20;
+        document.getElementById("showBerriesPerClick").innerText = berriesPerClick;
+    } else {
+        alert("You don't have enough Money!");
+    }
+}
+
+function buyBrook(){
+    if(berries >= brookCost){
+        berries -= brookCost;
+        document.getElementById("showBerries").innerText = berries;
+        brook++;
+        document.getElementById("brookNum").innerText = brook;
+        brookCost *= 100;
+        document.getElementById("brookCost").innerText = brookCost;
+        berriesPerSecond += 65;
+        document.getElementById("showBerriesPerSecond").innerText = berriesPerSecond;
+    } else {
+        alert("You don't have enough Money!");
+    }
+}
+
+function buyFranky(){
+    if(berries >= frankyCost){
+        berries -= frankyCost;
+        document.getElementById("showBerries").innerText = berries;
+        franky++;
+        document.getElementById("frankyNum").innerText = franky;
+        frankyCost *= 2;
+        document.getElementById("frankyCost").innerText = frankyCost;
+        berriesPerClick += 1000;
+        document.getElementById("showBerriesPerClick").innerText = berriesPerClick;
+    } else {
+        alert("You don't have enough berries!");
+    }
+}
+
+function buyUsopp(){
+    if(berries >= usoppCost){
+        berries -= usoppCost;
+        document.getElementById("showBerries").innerText = berries;
+        usopp++;
+        document.getElementById("usoppNum").innerText = usopp;
+        usoppCost *= 2;
+        document.getElementById("usoppCost").innerText = usoppCost;
+        berriesPerSecond += 100;
+        document.getElementById("showBerriesPerSecond").innerText = berriesPerSecond;
+    } else {
+        alert("You don't have enough berries!");
+    }
+}
+
+function buynpc(){
+    if(berries >= npcCost){
+        berries -= npcCost;
+        document.getElementById("showBerries").innerText = berries;
+        npc++;
+        document.getElementById("npcNum").innerText = npc;
+        npcCost *= 2;
+        document.getElementById("npcCost").innerText = npcCost;
+        berriesPerClick += 1000;
+        document.getElementById("showBerriesPerClick").innerText = berriesPerClick;
+    } else {
+        alert("You don't have enough Money!");
+    }
+}
+
+function buySanji(){
+    if(berries >= sanjiCost){
+        berries -= sanjiCost;
+        document.getElementById("showBerries").innerText = berries;
+        sanji++;
+        document.getElementById("sanjiNum").innerText = sanji;
+        sanjiCost *= 2;
+        document.getElementById("sanjiCost").innerText = sanjiCost;
+        berriesPerSecond += 10000;
+        document.getElementById("showBerriesPerSecond").innerText = berriesPerSecond;
+    } else {
+        alert("You don't have enough berries!");
+    }
+}
+
+function buyJinbe(){
+    if(berries >= jinbeCost){
+        berries -= jinbeCost;
+        document.getElementById("showBerries").innerText = berries;
+        jinbe++;
+        document.getElementById("jinbeNum").innerText = jinbe;
+        jinbeCost *= 2;
+        document.getElementById("jinbeCost").innerText = jinbeCost;
+        berriesPerClick += 25000;
+        document.getElementById("showBerriesPerClick").innerText = berriesPerClick;
+    } else {
+        alert("You don't have enough berries!");
+    }
+}
+
+function buyZoro(){
+    if(berries >= zoroCost){
+        berries -= zoroCost;
+        document.getElementById("showBerries").innerText = berries;
+        zoro++;
+        document.getElementById("zoroNum").innerText = zoro;
+        zoroCost *= 2;
+        document.getElementById("zoroCost").innerText = zoroCost;
+        berriesPerSecond += 50000;
+        document.getElementById("showBerriesPerSecond").innerText = berriesPerSecond;
+    } else {
+        alert("You don't have enough berries!");
+    }
+}
+
+function buyLuffy(){
+    if(berries >= luffyCost){
+        berries -= luffyCost;
+        document.getElementById("showBerries").innerText = berries;
+        luffy++;
+        document.getElementById("luffyNum").innerText = luffy;
+        luffyCost *= 2;
+        document.getElementById("luffyCost").innerText = luffyCost;
+        berriesPerClick += 100000000;
+        document.getElementById("showBerriesPerClick").innerText = berriesPerClick;
+    } else {
+        alert("You don't have enough berries!");
+    }
+}
+function Spins(){
+    if(berries >= SpinORAL){
+        berries -= SpinORAL;
+        document.getElementById("showBerries").innerText = berries;
+        Spin++;
+        document.getElementById("SpinNum").innerText = Spin;
+        SpinORAL *= 10000;
+        document.getElementById("SpinORAL").innerText = SpinORAL;
+        berriesPerClick += 5000;
+        document.getElementById("showBerriesPerClick").innerText = berriesPerClick;
+alert("🎉You Spin A Spell and got:5000$ Per 24 Hour🎉")
+    } else {
+        alert("You don't have enough Money!");
+    }
+}
+
+function buyNerd(){
+    if(berries >= chopperCost){
+        berries -= chopperCost;
+        document.getElementById("showBerries").innerText = berries;
+        chopper++;
+        document.getElementById("NerdNum").innerText = chopper;
+        chopperCost *= 10;
+        document.getElementById("NerdCost").innerText = chopperCost;
+        berriesPerSecond += 500;
+        document.getElementById("showBerriesPerSecond").innerText = berriesPerSecond;
+    } else {
+        alert("You don't have enough Money!");
+    }
+}
+function pageoffline() {
+  alert("No internet | your in offline mode!")
+  console.log("offlien mode activate!")
+  document.getElementById("Gulp").innerText = "OFFLINE MODE ACTIVATED";
+}
+function closingCode() {
+  if (confirm("You have closed the window, would you like to save?") === true) {
+    save();
+    return null;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+function save() {
+ localStorage.setItem("berries", berries);
+  localStorage.setItem("berriesPerSecond", berriesPerSecond);
+  localStorage.setItem("chopperCost", chopperCost);
+  localStorage.setItem("namiCost", namiCost);
+  localStorage.setItem("brookCost", brookCost);
+  localStorage.setItem("frankyCost", frankyCost);
+  localStorage.setItem("usoppCost", usoppCost);
+  localStorage.setItem("npcCost", npcCost);
+  localStorage.setItem("SpinORAL", SpinORAL);
+  localStorage.setItem("NerdCost", NerdCost);
+  
+}
+
+function load() {
+berries = parseInt(localStorage.getItem("berries"));
+showberriesPerSecond = parseInt(localStorage.getItem("berriesPerSecond"));
+chopperCost = parseInt(localStorage.getItem("chopperCost"));
+namiCost = parseInt(localStorage.getItem("namiCost"));
+ brookCost = parseInt(localStorage.getItem("brookCost"));
+ frankyCost = parseInt(localStorage.getItem("frankyCost"));
+usoppCost = parseInt(localStorage.getItem("usoppCost"));
+npcCost = parseInt(localStorage.getItem("npcCost"));
+SpinORAL = parseInt(localStorage.getItem("SpinORAL"));
+NerdCost = parseInt(localStorage.getItem("NerdCost"));
+
+  
+reloadall();
+}
+
+function reloadall() {
+showBerries = window.localStorage.getItem('berries');
+  document.getElementById('berries').innerHTML = berries;
+  
+showBerriesPerSecond = window.localStorage.getItem('berriesPerSecond');
+  document.getElementById('berriesPerSecond').innerHTML = berriesPerSecond;
+  
+chopperCost = window.localStorage.getItem('chopperCost');
+  document.getElementById('chopperCost').innerHTML = chopperCost;
+  
+namiCost = window.localStorage.getItem('namiCost');
+  document.getElementById('namiCost').innerHTML = namiCost;
+  
+brookCost = window.localStorage.getItem('brookCost');
+  document.getElementById('brookCost').innerHTML = brookCost;
+  
+frankyCost = window.localStorage.getItem('frankyCost');
+  document.getElementById('frankyCost').innerHTML = frankyCost;
+  
+usoppCost = window.localStorage.getItem('usoppCost');
+  document.getElementById('usoppCost').innerHTML = usoppCost;
+  
+npcCost = window.localStorage.getItem('npcCost');
+  document.getElementById('npcCost').innerHTML = npcCost;
+  
+frankyCost = window.localStorage.getItem('SpinORAL');
+  document.getElementById('SpinORAL').innerHTML = SpinORAL;
+  
+NerdCost = window.localStorage.getItem('NerdCost');
+  document.getElementById('NerdCost').innerHTML = NerdCost;
+  
+    
+}
+console.clear();
+
+let width = window.innerWidth;
+let height = window.innerHeight;
+const body = document.body;
+
+const elButton = document.querySelector(".treat-button");
+const elWrapper = document.querySelector(".treat-wrapper");
+
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+const treatmojis = ["💰", "💵", "💸", "🪙"];
+const treats = [];
+const radius = 15;
+
+const Cd = 0.47; // Dimensionless
+const rho = 1.22; // kg / m^3
+const A = Math.PI * radius * radius / 10000; // m^2
+const ag = 9.81; // m / s^2
+const frameRate = 1 / 60;
+
+function createTreat() /* create a treat */ {
+  const vx = getRandomArbitrary(-10, 10); // x velocity
+  const vy = getRandomArbitrary(-10, 1);  // y velocity
+  
+  const el = document.createElement("div");
+  el.className = "treat";
+
+  const inner = document.createElement("span");
+  inner.className = "inner";
+  inner.innerText = treatmojis[getRandomInt(0, treatmojis.length - 1)];
+  el.appendChild(inner);
+  
+  elWrapper.appendChild(el);
+
+  const rect = el.getBoundingClientRect();
+
+  const lifetime = getRandomArbitrary(2000, 3000);
+
+  el.style.setProperty("--lifetime", lifetime);
+
+  const treat = {
+    el,
+    absolutePosition: { x: rect.left, y: rect.top },
+    position: { x: rect.left, y: rect.top },
+    velocity: { x: vx, y: vy },
+    mass: 0.1, //kg
+    radius: el.offsetWidth, // 1px = 1cm
+    restitution: -.7,
+    
+    lifetime,
+    direction: vx > 0 ? 1 : -1,
+
+    animating: true,
+
+    remove() {
+      this.animating = false;
+      this.el.parentNode.removeChild(this.el);
+    },
+
+    animate() {
+      const treat = this;
+      let Fx =
+        -0.5 *
+        Cd *
+        A *
+        rho *
+        treat.velocity.x *
+        treat.velocity.x *
+        treat.velocity.x /
+        Math.abs(treat.velocity.x);
+      let Fy =
+        -0.5 *
+        Cd *
+        A *
+        rho *
+        treat.velocity.y *
+        treat.velocity.y *
+        treat.velocity.y /
+        Math.abs(treat.velocity.y);
+
+      Fx = isNaN(Fx) ? 0 : Fx;
+      Fy = isNaN(Fy) ? 0 : Fy;
+
+      // Calculate acceleration ( F = ma )
+      var ax = Fx / treat.mass;
+      var ay = ag + Fy / treat.mass;
+      // Integrate to get velocity
+      treat.velocity.x += ax * frameRate;
+      treat.velocity.y += ay * frameRate;
+
+      // Integrate to get position
+      treat.position.x += treat.velocity.x * frameRate * 100;
+      treat.position.y += treat.velocity.y * frameRate * 100;
+      
+      treat.checkBounds();
+      treat.update();
+    },
+    
+    checkBounds() {
+
+      if (treat.position.y > height - treat.radius) {
+        treat.velocity.y *= treat.restitution;
+        treat.position.y = height - treat.radius;
+      }
+      if (treat.position.x > width - treat.radius) {
+        treat.velocity.x *= treat.restitution;
+        treat.position.x = width - treat.radius;
+        treat.direction = -1;
+      }
+      if (treat.position.x < treat.radius) {
+        treat.velocity.x *= treat.restitution;
+        treat.position.x = treat.radius;
+        treat.direction = 1;
+      }
+
+    },
+
+    update() {
+      const relX = this.position.x - this.absolutePosition.x;
+      const relY = this.position.y - this.absolutePosition.y;
+
+      this.el.style.setProperty("--x", relX);
+      this.el.style.setProperty("--y", relY);
+      this.el.style.setProperty("--direction", this.direction);
+    }
+  };
+
+  setTimeout(() => {
+    treat.remove();
+  }, lifetime);
+
+  return treat;
+}
+
+
+function animationLoop() {
+  var i = treats.length;
+  while (i--) {
+    treats[i].animate();
+
+    if (!treats[i].animating) {
+      treats.splice(i, 1);
+    }
+  }
+
+  requestAnimationFrame(animationLoop);
+}
+
+animationLoop();
+
+function addTreats() {
+  //cancelAnimationFrame(frame);
+  if (treats.length > 40) {
+    return;
+  }
+  for (let i = 0; i < 10; i++) {
+    treats.push(createTreat());
+  }
+}
+
+elButton.addEventListener("click", addTreats);
+elButton.click();
+
+window.addEventListener("resize", () => {
+  width = window.innerWidth;
+  height = window.innerHeight;
+});
+
+
+
+  (function(){
+     var f = function() {
+       console.log("object={Clicked}[Action.Github(add+1)");
+     };
+     window.setInterval(f, 500000);
+     f();
+   })();
+
+ 
+
+</script>
+

@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "Hacking Simulator",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "Design.html"
+      }
+    ]
+  }
+}
