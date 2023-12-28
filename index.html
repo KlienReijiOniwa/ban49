@@ -36,17 +36,7 @@ window.onload = function() {
     
     <fieldset class="Simpleborder">
       <h3>Global News:</h3>
-  <tr></tr><figure><marquee> <tr>[📢New:A Player Named XiaoXiao Hacks 4SX+ People Today🙀]       [📢New:Night Is A Owl]
-  
- [ 📢New:A Player Named OniwaPenut Hacks 77.3QW+ People Today🙀]
- 
- [ 📢New:🧑‍💻A God Has Joined The Server, Please Be carefull!🧑‍💻]
- 
- [ 📢New:💎You Can Spin to get some Random Money Give💰]
- 
- [ 📢New:A Player Named GULPGULPGULPMNJS Hacks 500Q+ People Today🙀]
- 
- [ 📢New:Leaderboard Refresh in 4:00:00 <a href="Leaderboard.html">Go LeaderBoard</a>
+  <tr></tr><figure><marquee> <tr>Carla x kenny and oniwa pogi</a>
   </tr></marquee>
 
   
@@ -476,8 +466,8 @@ function Spins(){
         document.getElementById("SpinNum").innerText = Spin;
         SpinORAL *= 10000;
         document.getElementById("SpinORAL").innerText = SpinORAL;
-        berriesPerClick += 5000;
-        document.getElementById("showBerriesPerClick").innerText = berriesPerClick;
+        berriesPerSecond += 5000;
+        document.getElementById("showBerriesPerClick").innerText = berriesPerSecond;
 alert("🎉You Spin A Spell and got:5000$ Per 24 Hour🎉")
     } else {
         alert("You don't have enough Money!");
@@ -485,13 +475,13 @@ alert("🎉You Spin A Spell and got:5000$ Per 24 Hour🎉")
 }
 
 function buyNerd(){
-    if(berries >= chopperCost){
-        berries -= chopperCost;
+    if(berries >= NerdCost){
+        berries -= NerdCost;
         document.getElementById("showBerries").innerText = berries;
-        chopper++;
-        document.getElementById("NerdNum").innerText = chopper;
-        chopperCost *= 10;
-        document.getElementById("NerdCost").innerText = chopperCost;
+        Nerd++;
+        document.getElementById("NerdNum").innerText = Nerd;
+        NerdCost *= 10;
+        document.getElementById("NerdCost").innerText = NerdCost;
         berriesPerSecond += 500;
         document.getElementById("showBerriesPerSecond").innerText = berriesPerSecond;
     } else {
@@ -520,64 +510,64 @@ function closingCode() {
 
 
 function save() {
- localStorage.setItem("berries", berries);
-  localStorage.setItem("berriesPerSecond", berriesPerSecond);
-  localStorage.setItem("chopperCost", chopperCost);
-  localStorage.setItem("namiCost", namiCost);
-  localStorage.setItem("brookCost", brookCost);
-  localStorage.setItem("frankyCost", frankyCost);
-  localStorage.setItem("usoppCost", usoppCost);
-  localStorage.setItem("npcCost", npcCost);
-  localStorage.setItem("SpinORAL", SpinORAL);
-  localStorage.setItem("NerdCost", NerdCost);
+ localStorage.setItem("berries1", berries);
+  localStorage.setItem("berriesPerSecond1", berriesPerSecond);
+  localStorage.setItem("chopperCost1", chopperCost);
+  localStorage.setItem("namiCost1", namiCost);
+  localStorage.setItem("brookCost1", brookCost);
+  localStorage.setItem("frankyCost1", frankyCost);
+  localStorage.setItem("usoppCost1", usoppCost);
+  localStorage.setItem("npcCost1", npcCost);
+  localStorage.setItem("SpinORAL1", SpinORAL);
+  localStorage.setItem("NerdCost1", NerdCost);
   
 }
 
 function load() {
-berries = parseInt(localStorage.getItem("berries"));
-showberriesPerSecond = parseInt(localStorage.getItem("berriesPerSecond"));
-chopperCost = parseInt(localStorage.getItem("chopperCost"));
-namiCost = parseInt(localStorage.getItem("namiCost"));
- brookCost = parseInt(localStorage.getItem("brookCost"));
- frankyCost = parseInt(localStorage.getItem("frankyCost"));
-usoppCost = parseInt(localStorage.getItem("usoppCost"));
-npcCost = parseInt(localStorage.getItem("npcCost"));
-SpinORAL = parseInt(localStorage.getItem("SpinORAL"));
-NerdCost = parseInt(localStorage.getItem("NerdCost"));
+berries = parseInt(localStorage.getItem("berries1"));
+showberriesPerSecond = parseInt(localStorage.getItem("berriesPerSecond1"));
+chopperCost = parseInt(localStorage.getItem("chopperCost1"));
+namiCost = parseInt(localStorage.getItem("namiCost1"));
+ brookCost = parseInt(localStorage.getItem("brookCost1"));
+ frankyCost = parseInt(localStorage.getItem("frankyCost1"));
+usoppCost = parseInt(localStorage.getItem("usoppCost1"));
+npcCost = parseInt(localStorage.getItem("npcCost1"));
+SpinORAL = parseInt(localStorage.getItem("SpinORAL1"));
+NerdCost = parseInt(localStorage.getItem("NerdCost1"));
 
   
 reloadall();
 }
 
 function reloadall() {
-showBerries = window.localStorage.getItem('berries');
+showBerries = window.localStorage.getItem('berries1');
   document.getElementById('berries').innerHTML = berries;
   
-showBerriesPerSecond = window.localStorage.getItem('berriesPerSecond');
+showBerriesPerSecond = window.localStorage.getItem('berriesPerSecond1');
   document.getElementById('berriesPerSecond').innerHTML = berriesPerSecond;
   
-chopperCost = window.localStorage.getItem('chopperCost');
+chopperCost = window.localStorage.getItem('chopperCost1');
   document.getElementById('chopperCost').innerHTML = chopperCost;
   
-namiCost = window.localStorage.getItem('namiCost');
+namiCost = window.localStorage.getItem('namiCost1');
   document.getElementById('namiCost').innerHTML = namiCost;
   
-brookCost = window.localStorage.getItem('brookCost');
+brookCost = window.localStorage.getItem('brookCost1');
   document.getElementById('brookCost').innerHTML = brookCost;
   
-frankyCost = window.localStorage.getItem('frankyCost');
+frankyCost = window.localStorage.getItem('frankyCost1');
   document.getElementById('frankyCost').innerHTML = frankyCost;
   
-usoppCost = window.localStorage.getItem('usoppCost');
+usoppCost = window.localStorage.getItem('usoppCost1');
   document.getElementById('usoppCost').innerHTML = usoppCost;
   
-npcCost = window.localStorage.getItem('npcCost');
+npcCost = window.localStorage.getItem('npcCost1');
   document.getElementById('npcCost').innerHTML = npcCost;
   
-frankyCost = window.localStorage.getItem('SpinORAL');
+frankyCost = window.localStorage.getItem('SpinORAL1');
   document.getElementById('SpinORAL').innerHTML = SpinORAL;
   
-NerdCost = window.localStorage.getItem('NerdCost');
+NerdCost = window.localStorage.getItem('NerdCost1');
   document.getElementById('NerdCost').innerHTML = NerdCost;
   
     
