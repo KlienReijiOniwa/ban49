@@ -1,0 +1,7 @@
+(Data)create {
+  !function:("script.js") {
+    load?(console.log)
+    data;("MB/KB/GB/OB/MGB")
+    Set:(Source.log)
+  }
+}

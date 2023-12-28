@@ -1,0 +1,13 @@
+console.log("Player:(Server 1)")
+console.log("Online")
+console.error("Cant Find Country information")
+console.error("User ID Failed to Generate!")
+console.error("User ID Failed to Generate!")
+console.error("User ID Failed to Generate!")
+console.error("User ID Failed to Generate!")
+console.log("User ID Generated!")
+console.log("User ID:(Localhost);")
+console.log("Player Data Ready (Succesfully Downloaded)")
+alert("Player(Joined)")
+alert("Javascript:(Localhost38372938):Negative File No limited:[Server1].NoScript:Script.Grantid.ruby.html.css.java.javascript.notify.html.localhostgranted?nobily&harsh&IDPlayer.log")
+
