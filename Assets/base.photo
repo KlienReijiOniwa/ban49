@@ -1,0 +1,16 @@
+localhost{
+storage.[1000] {
+   Points(timer("1000");
+    }
+}
+
+storage.Game('1/GB').set();
+storage.GameUnity('Online/Game').set();
+storage.object('1/GB').set() {
+
+void empty (Server) {
+add1:[''object.all'] {
+break{Points} 3.0,
+      }
+   }
+}
